@@ -3,13 +3,12 @@ public class Main {
         ApplePieRecipe applePieRecipe = new ApplePieRecipe();
         BeefBurgerRecipe beefBurgerRecipe = new BeefBurgerRecipe();
 
+        System.out.println("------------Apple pie recipe-------------");
         applePieRecipe.printIngredients();
-        System.out.println(" ");
         applePieRecipe.printInstructions();
-        //kun je bij een float de .0 weglaten?
 
+        System.out.println("-----------Beef burger recipe------------");
         beefBurgerRecipe.printIngredients();
-        System.out.println(" ");
         beefBurgerRecipe.printInstructions();
     }
 }

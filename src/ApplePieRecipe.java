@@ -1,9 +1,8 @@
 public class ApplePieRecipe {
-    //moet er public of private voor?
     Ingredient butter = new Ingredient(200f, "gram", "ongezouten roomboter");
     Ingredient casterSugar = new Ingredient(200f, "gram", "witter basterd suiker");
     Ingredient flour = new Ingredient(400f, "gram", "zelfrijzend bakmeel");
-    Ingredient egg = new Ingredient(1f, "stuk(s)", "ei");
+    Ingredient egg = new Ingredient(1f, null, "ei");
     Ingredient vanillaSugar = new Ingredient(8f, "gram", "vanillesuiker");
     Ingredient salt = new Ingredient(1f, "snuf", "zout");
     Ingredient apples = new Ingredient(1.5f, "kilo", "zoetzure appels");
@@ -13,21 +12,22 @@ public class ApplePieRecipe {
 
 
     public void printIngredients() {
-        System.out.println("Recipe ingredients:");
-        System.out.println(butter.getAmount() + " " + butter.getUnit() + " " + butter.getName());
-        System.out.println(casterSugar.getAmount() + " " + casterSugar.getUnit() + " " + casterSugar.getName());
-        System.out.println(flour.getAmount() + " " + flour.getUnit() + " " + flour.getName());
-        System.out.println(egg.getAmount() + " " + egg.getUnit() + " " + egg.getName());
-        System.out.println(vanillaSugar.getAmount() + " " + vanillaSugar.getUnit() + " " + vanillaSugar.getName());
-        System.out.println(salt.getAmount() + " " + salt.getUnit() + " " + salt.getName());
-        System.out.println(apples.getAmount() + " " + apples.getUnit() + " " + apples.getName());
-        System.out.println(cristalSugar.getAmount() + " " + cristalSugar.getUnit() + " " + cristalSugar.getName());
-        System.out.println(cinnamon.getAmount() + " " + cinnamon.getUnit() + " " + cinnamon.getName());
-        System.out.println(breadCrumbs.getAmount() + " " + breadCrumbs.getUnit() + " " + breadCrumbs.getName());
+        System.out.println("\nRecipe ingredients:\n");
+        System.out.println(butter.toString());
+        System.out.println(casterSugar.toString());
+        System.out.println(flour.toString());
+        System.out.println(egg.toString());
+        System.out.println(vanillaSugar.toString());
+        System.out.println(salt.toString());
+        System.out.println(apples.toString());
+        System.out.println(cristalSugar.toString());
+        System.out.println(cinnamon.toString());
+        System.out.println(breadCrumbs.toString());
+        System.out.println(" ");
     }
 
     public void printInstructions() {
-        System.out.println("Recipe instructions:");
+        System.out.println("\nRecipe instructions:\n");
         preHeatOven();
         whiskEgg();
         makeDough();
@@ -38,6 +38,7 @@ public class ApplePieRecipe {
         makeRibbons();
         placeRibbons();
         bakePie();
+        System.out.println(" ");
     }
 
     public void preHeatOven() {

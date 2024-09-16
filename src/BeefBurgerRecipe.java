@@ -1,39 +1,38 @@
 public class BeefBurgerRecipe {
     Ingredient oliveOil = new Ingredient(0.5f, "tbsp", "olive oil");
-    Ingredient onion = new Ingredient(1f, "piece(s)", "onion");
+    Ingredient onion = new Ingredient(1f, null, "onion");
     Ingredient lettuce = new Ingredient(8f, "leaves", "lettuce");
-    Ingredient tomato = new Ingredient(1f, "piece(s)", "beef tomato");
+    Ingredient tomato = new Ingredient(1f, null, "beef tomato");
     Ingredient beefMince = new Ingredient(500f, "g", "beef mince 15% fat");
     Ingredient driedHerbs = new Ingredient(1f, "tsp", "dried herbs");
-    Ingredient egg = new Ingredient(1f, "piece(s)", "egg");
+    Ingredient egg = new Ingredient(1f, null, "egg");
     Ingredient cheddar = new Ingredient(4f, "slices", "cheddar");
-    Ingredient whiteBun = new Ingredient(4f, "piece(s)", "white buns");
-    //kan je ook de unit weglaten?
+    Ingredient whiteBun = new Ingredient(4f, null, "white buns");
 
 
     public void printIngredients() {
-        System.out.println("Ingredients:");
-        System.out.println(oliveOil.getAmount() + " " + oliveOil.getUnit() + " " + oliveOil.getName());
-        System.out.println(onion.getAmount() + " " + onion.getUnit() + " " + onion.getName());
-        System.out.println(lettuce.getAmount() + " " + lettuce.getUnit() + " " + lettuce.getName());
-        System.out.println(tomato.getAmount() + " " + tomato.getUnit() + " " + tomato.getName());
-        System.out.println(beefMince.getAmount() + " " + beefMince.getUnit() + " " + beefMince.getName());
-        System.out.println(driedHerbs.getAmount() + " " + driedHerbs.getUnit() + " " + driedHerbs.getName());
-        System.out.println(egg.getAmount() + " " + egg.getUnit() + " " + egg.getName());
-        System.out.println(cheddar.getAmount() + " " + cheddar.getUnit() + " " + cheddar.getName());
-        System.out.println(whiteBun.getAmount() + " " + whiteBun.getUnit() + " " + whiteBun.getName());
+        System.out.println("\nIngredients:\n");
+        System.out.println(oliveOil.toString());
+        System.out.println(onion.toString());
+        System.out.println(lettuce.toString());
+        System.out.println(tomato.toString());
+        System.out.println(beefMince.toString());
+        System.out.println(driedHerbs.toString());
+        System.out.println(egg.toString());
+        System.out.println(cheddar.toString());
+        System.out.println(whiteBun.toString());
+        System.out.println(" ");
     }
 
 
     public void printInstructions() {
-        System.out.println("Recipe instructions:");
+        System.out.println("\nRecipe instructions:\n");
         fryOnion();
         makeBurgers();
         bakeBurgers();
         buildBurgers();
+        System.out.println(" ");
     }
-
-
 
 
     public void fryOnion() {

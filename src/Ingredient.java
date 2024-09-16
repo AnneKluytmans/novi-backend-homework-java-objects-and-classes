@@ -39,4 +39,23 @@ public class Ingredient {
     public void setName(String name) {
         this.name = name;
     }
+
+
+    public String toString() {
+        if (unit != null) {
+            if (amount % 1 == 0) {
+                return (int) amount + " " + unit + " " + name;
+            } else {
+                return amount + " " + unit + " " + name;
+            }
+        } else {
+            if (amount % 1 == 0) {
+                return (int) amount + " " + name;
+            } else {
+                return amount + " " + name;
+            }
+        }
+
+
+    }
 }
