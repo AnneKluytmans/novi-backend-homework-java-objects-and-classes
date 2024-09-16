@@ -14,6 +14,6 @@ public class Movie {
     }
 
     public void printInfo() {
-        System.out.println("Movie: " + title + "\nDirector: " + director + "\nRelease Date: " + releaseYear + "\nGenre: " + genre);
+        System.out.println(title + " was directed by " + director + " and released in " + releaseYear + ". This movie has the genre: " + genre + ".");
     }
 }
