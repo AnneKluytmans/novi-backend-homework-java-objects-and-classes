@@ -40,11 +40,11 @@ The goal of this project is to practice working with **Java classes**, **methods
 ## How to Run
 
 1. Open the project in your IDE (IntelliJ IDEA)
-2. Navigate to `Main.java` in `src/main/java`
-3. Click the green play button next to the `main()` method → **Run 'Main'** or use the terminal:
-```bash
-./mvnw clean compile exec:java
-```
+2. Navigate to the `Main` class
+3. Locate the `main` method and click the green play button to **Run 'Main'** or use the terminal:
+    ```bash
+   mvn clean compile exec:java
+   ```
 
 ## Credits
 > "This assignment was developed as part of the Backend Java module in the NOVI Software Development program. All instructions, logic, and structure are part of the official coursework."
